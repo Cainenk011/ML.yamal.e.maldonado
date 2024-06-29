@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+}
+
+/* ● Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+
+
+/* Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    background-color: #ebebeb;
+}
+
+header{
+    background-color:#EAC926;
+    padding: 10px 16px 6px 16px;
+}
+
+main{
+    padding: 10px;
+    width: 90vw;
+    
+    margin: auto;
+}
+.header-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_logo{
+    width: 20%;
+}
+.search-bar{
+    width: 45%;
+    margin: 15px;
+}
+.header-form{
+    position: relative;
+}
+.header-form input{
+    width: 80%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+.header-form input:focus{
+    outline-color: #1259c3;
+    
+}
+
+.header-form a{
+    text-decoration: none;
+    color: #666666;
+}
+
+.header-form a:hover{
+    color: #0022AA;
+    transition: 0.8s ease;
+}
+
+
+.header-form a i{
+    margin: 3px;
+    padding: 9px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    right: 20%;
+}
+
+.header-title{
+    font-size: 14px;
+}
+.header-navbar{
+    display: none;
+}
+
+.header-navbar ul{
+    display: flex;
+    font-size: 14px;
+    list-style-type: none;
+    padding: 0px;
+}
+.header-navbar ul li{
+    margin: 0px 10px;
+    
+}
+.header-navbar ul li a{
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    transition: background-color 0.3 ease;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: whitesmoke;
+}
+
+.header_menu{
+    text-align: center;
+}
+
+.header_menu i {
+    text-align: center;
+    padding: 8px 10px 8px 10px;
+    color: white;
+    background-color: #1259c3;
+    border-radius: 5px;
+    font-size: 25px;
+    margin: 10px;
+}
+
+img{
+    display: block;
+}
+
+.login-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 40px auto; /* Centrar la tarjeta horizontalmente */
+    text-align: center; /* Centrar el contenido */
+}
+
+.login-card h2 {
+    font-size: 24px;
+    color: #03264C;
+    margin-bottom: 20px;
+}
+
+.login-card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"] {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.login-card input[type="submit"] {
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-card input[type="submit"]:hover {
+    background-color: #0022AA;
+    transition: 0.8s ease;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: none;
+}
+
+input:invalid + .error-message {
+    display: block;
+}
+
+input:valid + .error-message {
+    display: none;
+}
+
+footer{
+    padding: 30px;
+    margin: 5px;
+}
+.element-footer{
+    text-align: center;
+    color: #666;
+    margin: 50px 0px;
+}
+.element-footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:#1259c3;
+}
+.element-footer h4{
+    margin: 0px;
+}
+.element-footer p{
+    font-size: 12px;
+    margin: 0px;
+
+}
+
+#copyright {
+    color: #666;
+    font-size: 12px;
+    margin: 0px;
+}
+@media (max-width: 600px) {
+    .login-card {
+        padding: 15px;
+        margin: 20px auto;
+    }
+    
+    .login-card input[type="text"],
+    .login-card input[type="password"] {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px){
+    .article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .header-navbar{
+        margin: 20px 0px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header_menu{
+        display: none;
+    }
+    
+    .subtitle{
+        margin: 30px 0px 0px 30px;
+    }
+   
+    .header_logo{
+        width: 30%;
+    }
+    .search-bar{
+        width: 30%;
+    }
+    .header-form input{
+        width: 100%;
+    }
+    .header-form a i{
+        right: 0%;
+    }
+    .header-title{
+        text-align: right;
+    }
+}
+
+@media (min-width: 1024px){
+    .article{
+        width: 20%;
+    }
+    .article-info_flex{
+        width: 100%;
+    }
+
+}
