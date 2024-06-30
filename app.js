@@ -8,7 +8,7 @@ app.use (express.static(publicPath));
 
 //Levantamos el server y lo dejamos escuchando en el puerto 3000
 const port = process.env.PORT || 3030;
-app.listen(port, ()=>console.log(`Servidor corriendo en el puerto
+app.listen(port, ()=>console.log(`Servidor corriendo en el puerto de la casa
 ${port}`));
 
 //Así vamos poniendo las rutas de nuestro proyecto,utilizando el "path.join" luego dehaber requerido el módulo "path".
@@ -16,11 +16,11 @@ app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/home.html'));
 });
 
-app.get('/', (req, res) => { 
+app.get('/register', (req, res) => { 
     res.sendFile(path.resolve(__dirname, './views/register.html'));
 });
 
-app.get("/", (req, res) => { 
+app.get('/login', (req, res) => { 
     res.sendFile(path.resolve(__dirname, './views/login.html'));
 });
 

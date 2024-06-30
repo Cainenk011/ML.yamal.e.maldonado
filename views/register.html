@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercadoliebre</title>
-    <link rel="stylesheet" type="text/css" href="/public/css/estilos-register.css">
+    <link rel="stylesheet" type="text/css" href="/css/estilos-register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
     <header>
         <div class="header-top">
             <div class="header_logo">
-                <img src="/public/images/logo-mercado-liebre.svg" alt="ml-Logo">
+                <img src="/images/logo-mercado-liebre.svg" alt="ml-Logo">
             </div>
             <div class="search-bar">
                 <form class="header-form" action="#" method="GET">
@@ -47,13 +47,13 @@
             </ul>
             <ul>
                 <li>
-                    <a href="/views/register.html"> 
+                    <a href="http://localhost:3030/register"> 
                         Crea tu cuenta
                         <i class="fa-regular fa-id-card"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="/views/login.html">Ingresá</a>
+                    <a href="http://localhost:3030/login">Ingresá</a>
                     <i class="fa-solid fa-right-to-bracket"></i>
                 </li>
                 <li>
@@ -67,7 +67,7 @@
             </i>
         </div>
     </header>
-    <img class="header-banner" width="100%" src="/public/images/img-home-banner.jpg" alt="ml-banner">
+    <img class="header-banner" width="100%" src="/images/img-home-banner.jpg" alt="ml-banner">
     <main class="main">
         <section class="form-section">
             <h2 class="form-section__title">Completá los datos para crear tu cuenta</h2>
@@ -123,7 +123,7 @@
                         <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" placeholder="Confirma tu contraseña" required>
                     </div>
                     <div class="form__actions">
-                        <button type="submit" class="form__button">Enviar</button>
+                        <button type="submit" class="form__button" onclick="submitForm()">Enviar</button>
                         <button type="reset" class="form__button">Borrar</button>
                     </div>
                 </div>
@@ -158,5 +158,10 @@
             </div>
         </section>
     </footer>
+    <script>
+        function submitForm() {
+            window.location.href = "http://localhost:3030/";
+        }
+    </script>
 </body>
 </html>
